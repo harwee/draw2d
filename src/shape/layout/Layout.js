@@ -69,7 +69,7 @@ draw2d.shape.layout.Layout= draw2d.shape.basic.Rectangle.extend({
 //       child.setVisible(this.isVisible());
         // respect the "visible" flag of the child as well
        child.visible =  child.visible && this.visible;
-
+       child.fireEvent("added");
        return this;
     },
 

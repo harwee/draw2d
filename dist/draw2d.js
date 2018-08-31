@@ -10351,7 +10351,7 @@ _packages2.default.Figure = Class.extend({
         }
 
         this.repaint();
-
+        child.fireEvent("added");
         return this;
     },
 
@@ -57895,7 +57895,7 @@ _packages2.default.shape.layout.Layout = _packages2.default.shape.basic.Rectangl
         //       child.setVisible(this.isVisible());
         // respect the "visible" flag of the child as well
         child.visible = child.visible && this.visible;
-
+        child.fireEvent("added");
         return this;
     },
 

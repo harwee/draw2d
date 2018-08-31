@@ -1001,7 +1001,7 @@ draw2d.Figure = Class.extend({
          }
 
          this.repaint();
-
+         child.fireEvent("added")
          return this;
      },
 
